@@ -27,7 +27,7 @@ body {
 	height: 100%;
 	font-family: "Mulish", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	background:rgb(69, 74, 212);
+	background:#252233
 }
 
 h1,
@@ -98,7 +98,25 @@ ol {
 	padding: 0;
 	margin: 0;
 }
+/*---------------------
+  more button CSS
+-----------------------*/
+.more-text {
+  display: none;
+}
 
+.toggle-btn {
+  background: none;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}
 /*---------------------
   Helper CSS
 -----------------------*/

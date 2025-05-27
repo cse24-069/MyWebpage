@@ -1,23 +1,24 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="description" content="Anime Template">
     <meta name="keywords" content="Anime, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact | Anime Template</title>
+    <title>Anime | Contact</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/plyr.css" type="text/css">
     <link rel="stylesheet" href="css/nice-select.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
@@ -46,7 +47,16 @@
                         <nav class="header__menu mobile-menu">
                             <ul>
                                 <li><a href="./index.html">Homepage</a></li>
-                                <li><a href="./categories.html">Categories</a></li>
+                                <li><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="./categories.html">Categories</a></li>
+                                        <li><a href="./anime-details.html">Anime Details</a></li>
+                                        <li><a href="./anime-watching.html">Anime Watching</a></li>
+                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                        <li><a href="./signup.html">Sign Up</a></li>
+                                        <li><a href="./login.html">Login</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="./blog.html">Our Blog</a></li>
                                 <li class="active"><a href="./contact.html">Contacts</a></li>
                             </ul>
@@ -63,7 +73,22 @@
             <div id="mobile-menu-wrap"></div>
         </div>
     </header>
-    <!-- Header Section End -->
+    <!-- Header End -->
+
+    <!-- Normal Breadcrumb Begin -->
+    <section class="normal-breadcrumb set-bg" data-setbg="img/normal-breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="normal__breadcrumb__text">
+                        <h2>Contact Us</h2>
+                        <p>Get in touch with our team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Normal Breadcrumb End -->
 
     <!-- Contact Section Begin -->
     <section class="contact spad">
@@ -72,32 +97,40 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="contact__text">
                         <div class="section-title">
-                            <h2>Contact Us</h2>
+                            <h2>Our Locations</h2>
                         </div>
                         <ul>
                             <li>
-                                <h4>New York</h4>
-                                <p>60-49 Road 11378 New York <br />+65 11.188.888</p>
+                                <h4>Tokyo Office</h4>
+                                <p>1-2-3 Shibuya, Tokyo 150-0002<br />+81 3-1234-5678</p>
                             </li>
                             <li>
-                                <h4>London</h4>
-                                <p>60-49 Road 11378 London <br />+65 11.188.888</p>
+                                <h4>New York Office</h4>
+                                <p>123 Broadway, New York, NY 10001<br />+1 212-555-1234</p>
+                            </li>
+                            <li>
+                                <h4>London Office</h4>
+                                <p>1 Piccadilly Circus, London W1J 0DA<br />+44 20 7123 4567</p>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="contact__form">
+                        <div class="section-title">
+                            <h2>Send Us A Message</h2>
+                        </div>
                         <form action="#">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="Name">
+                                    <input type="text" placeholder="Your Name">
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="email" placeholder="Email">
+                                    <input type="email" placeholder="Your Email">
                                 </div>
                                 <div class="col-lg-12">
-                                    <textarea placeholder="Message"></textarea>
+                                    <input type="text" placeholder="Subject">
+                                    <textarea placeholder="Your Message"></textarea>
                                     <button type="submit" class="site-btn">Send Message</button>
                                 </div>
                             </div>
@@ -124,16 +157,16 @@
                 <div class="col-lg-6">
                     <div class="footer__nav">
                         <ul>
-                            <li class="active"><a href="./index.html">Homepage</a></li>
+                            <li><a href="./index.html">Homepage</a></li>
                             <li><a href="./categories.html">Categories</a></li>
                             <li><a href="./blog.html">Our Blog</a></li>
-                            <li><a href="./contact.html">Contacts</a></li>
+                            <li class="active"><a href="./contact.html">Contacts</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
                     </p>
                 </div>
             </div>
@@ -155,9 +188,10 @@
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/player.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
     <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>

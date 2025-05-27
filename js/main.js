@@ -22,6 +22,36 @@
             var mixer = mixitup(containerEl);
         }
     });
+    function toggleText() {
+  const dots = document.getElementById("dots");
+  const moreText = document.getElementById("more");
+  const btn = document.getElementById("toggleBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+    btn.textContent = "+More";
+  } else {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+    btn.textContent = "-Less";
+  }
+}
+
+document.querySelectorAll('.toggle-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const paragraph = button.parentElement;
+    const dots = paragraph.querySelector('.dots');
+    const moreText = paragraph.querySelector('.more-text');
+
+    const isHidden = moreText.style.display === 'none' || moreText.style.display === '';
+
+    moreText.style.display = isHidden ? 'inline' : 'none';
+    dots.style.display = isHidden ? 'none' : 'inline';
+    button.textContent = isHidden ? '-Less' : '+More';
+  });
+});
+
 
     /*------------------
         Background Set
