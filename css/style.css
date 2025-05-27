@@ -336,7 +336,7 @@ ol {
 -----------------------*/
 
 .header {
-	background: #6e28f1;
+	background: #34284b;
 }
 
 .header__logo {
@@ -359,7 +359,7 @@ ol {
 }
 
 .header__menu ul li.active a {
-	background: #e53637;
+	background: 0;
 	color: #ffffff;
 }
 
@@ -2281,6 +2281,83 @@ ol {
 		width: 100%;
 	}
 }
+-----------------------------
+/* AnimeHub Custom Styles */
+-----------------------------
+body.animehub-body {
+    font-family: 'Mulish', sans-serif;
+    background: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.animehub-header {
+    padding: 20px 0;
+}
+
+.animehub-logo img {
+    width: 150px;
+}
+
+.animehub-nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.animehub-nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.animehub-user-tools a {
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Sections */
+.animehub-main section {
+    margin: 40px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.animehub-main h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.animehub-main p,
+.animehub-main ul {
+    font-size: 16px;
+    color: white;
+}
+
+.animehub-main ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Footer */
+.animehub-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+    border-top: 1px solid white;
+}
+
 
 /* Small Device = 320px */
 
